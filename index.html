@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My GitHub Codespace</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:Arial, Helvetica, sans-serif;
+        }
+
+        body{
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            height:100vh;
+            background:linear-gradient(135deg,#0f172a,#2563eb);
+            color:white;
+        }
+
+        .card{
+            text-align:center;
+            background:rgba(255,255,255,.1);
+            backdrop-filter:blur(12px);
+            padding:40px;
+            border-radius:20px;
+            width:400px;
+            box-shadow:0 10px 30px rgba(0,0,0,.3);
+        }
+
+        h1{
+            font-size:2rem;
+            margin-bottom:15px;
+        }
+
+        p{
+            margin-bottom:20px;
+            opacity:.9;
+        }
+
+        button{
+            padding:12px 24px;
+            border:none;
+            border-radius:8px;
+            background:#fff;
+            color:#2563eb;
+            font-size:16px;
+            cursor:pointer;
+            font-weight:bold;
+            transition:.3s;
+        }
+
+        button:hover{
+            transform:scale(1.05);
+        }
+    </style>
+</head>
+<body>
+
+<div class="card">
+    <h1>🚀 GitHub Codespace</h1>
+    <p>Your Codespace is working successfully.</p>
+
+    <button onclick="showMessage()">Click Me</button>
+</div>
+
+<script>
+function showMessage(){
+    alert("🎉 Congratulations! Your HTML, CSS and JavaScript are running in GitHub Codespaces.");
+}
+</script>
+
+</body>
+</html>
